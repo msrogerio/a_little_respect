@@ -11,6 +11,8 @@ try:
             else:
                 esp = ''
                 for l, m in enumerate (j):
+                    if ',' in m:
+                        m = m.replace(',', '.')
                     if l == 0:
                         esp = m
                     if l == 2: 
